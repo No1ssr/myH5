@@ -13,25 +13,28 @@
             height:100%;
         }
         @keyframes myfirst {
-            from{opacity: 0}
-            to{opacity: 100}
+            0%{opacity: 0.25}
+            50%{opacity: 1}
+            100%{opacity: 0.25}
         }
+
         h1,p{
-            animation: myfirst 8s /*infinite 重复*/;
+            animation: myfirst 5s infinite ;
+            animation-timing-function:linear;
         }
     </style>
 </head>
 <body>
-<audio id="audioplayer" preload="auto" autoplay controls style="width: 50%;"
+<audio id="audioplayer" preload="auto" controls style="width: 50%;"
        loop="loop">
     <source src="wav/song.ogg" type="audio/ogg">
 </audio>
-<font size="6"color="white">欢迎光临我的主页</font>
+<font id="welcome" size="6"color="white">欢迎光临我的主页</font>
 <hr>
 <p align="center"><b>今日事今日毕</b></p>
 <br>
 <h3 align="center">英语四级词汇</h3>
-<p>1.	abandon。。。。/ ə’bændən/ vt.丢弃；放弃，抛弃</p>
+<p>1.	abandon/ ə’bændən/ vt.丢弃；放弃，抛弃</p>
 <p>2.	aboard/ ə’bɔ:d/ ad.在船(车)上；上船</p>
 <p>3.	absolute/ ‘æbsəlu:t/ a.绝对的；纯粹的</p>
 <p>4.	absolutely/ ‘æbsəlu:tli/ ad.完全地；绝对地</p>
