@@ -17,11 +17,22 @@
             50%{opacity: 1}
             100%{opacity: 0.25}
         }
-
-        h1,p{
+        p{
             animation: myfirst 5s infinite ;
             animation-timing-function:linear;
         }
+    </style>
+    <style type="text/css">
+        #weltitle
+         {
+             transition:color 1s;
+             -moz-transition:color 1s; /* Firefox */
+         }
+        #weltitle:hover
+        {
+            color:lightblue;
+            animation-timing-function:linear;
+        }/*当鼠标停留或离开<weltitle>元素时，发生颜色变化，时间为1s。控制单位是hover*/
     </style>
 </head>
 <body>
@@ -29,9 +40,9 @@
        loop="loop">
     <source src="wav/song.ogg" type="audio/ogg">
 </audio>
-<font id="welcome" size="6"color="white">欢迎光临我的主页</font>
+<font id="weltitle" size="6"color="blue">欢迎光临我的主页</font>
 <hr>
-<p align="center"><b>今日事今日毕</b></p>
+<h1 align="center"><b>今日事今日毕</b></h1>
 <br>
 <h3 align="center">英语四级词汇</h3>
 <p>1.	abandon/ ə’bændən/ vt.丢弃；放弃，抛弃</p>
